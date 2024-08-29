@@ -28,18 +28,18 @@ VALUES
 
 SELECT * 
 FROM superstore;
--- order by price descending
 
+-- order by price descending
 SELECT *
 FROM superstore
 ORDER BY price DESC;
--- statistic
 
+-- statistic 
 SELECT SUM(price), category
 FROM superstore
 GROUP BY category;
--- question 
 
+-- question : How many air purifiers in stock?
 SELECT item_name, 
 stock_quantity
 FROM superstore 
